@@ -21,37 +21,37 @@ const menuCategories = [
   {
     name: "Indian Starters",
     items: [
-      { name: "Rosemary Kabab", price: "₹269", image: rosemaryKabab },
-      { name: "Ros by Rolls", price: "₹269", image: rosRolls },
-      { name: "Masledar Cheese Kebab", price: "₹269", image: cheeseKebab },
-      { name: "Dahi Papdi Chat", price: "₹129", image: dahiPapdiChat },
+      { name: "Rosemary Kabab", price: "₹269", image: rosemaryKabab, description: "Aromatic kebabs infused with fresh rosemary" },
+      { name: "Ros by Rolls", price: "₹269", image: rosRolls, description: "Crispy rolls with special house filling" },
+      { name: "Masledar Cheese Kebab", price: "₹269", image: cheeseKebab, description: "Spiced cheese patties with aromatic masalas" },
+      { name: "Dahi Papdi Chat", price: "₹129", image: dahiPapdiChat, description: "Crispy wafers topped with yogurt and chutneys" },
     ],
   },
   {
     name: "Chinese Delights",
     items: [
-      { name: "Honey Chilly Potato", price: "₹249", image: honeyChillyPotato },
-      { name: "Honey Chilly With Sesam", price: "₹299", image: honeyChillySesame },
-      { name: "Paneer Chilly", price: "₹299", image: paneerChilly },
-      { name: "Mushroom Chilly", price: "₹349", image: mushroomChilly },
+      { name: "Honey Chilly Potato", price: "₹249", image: honeyChillyPotato, description: "Crispy potatoes tossed in honey chili sauce" },
+      { name: "Honey Chilly With Sesame", price: "₹299", image: honeyChillySesame, description: "Sweet and spicy with sesame crunch" },
+      { name: "Paneer Chilly", price: "₹299", image: paneerChilly, description: "Indo-Chinese cottage cheese in spicy sauce" },
+      { name: "Mushroom Chilly", price: "₹349", image: mushroomChilly, description: "Tender mushrooms in tangy chili garlic sauce" },
     ],
   },
   {
     name: "Indian Essence",
     items: [
-      { name: "Redmit Kebab", price: "₹329", image: redmitKebab },
-      { name: "Keema Soya Tikka", price: "₹329", image: keemaSoyaTikka },
-      { name: "Paneer Makhmali Kebab", price: "₹349", image: paneerMakhmaliKebab },
-      { name: "Paneer Kali Mirchi Tikka", price: "₹369", image: paneerKaliMirchiTikka },
+      { name: "Redmit Kebab", price: "₹329", image: redmitKebab, description: "Succulent kebabs with authentic spices" },
+      { name: "Keema Soya Tikka", price: "₹329", image: keemaSoyaTikka, description: "Protein-rich soya tikka with minced texture" },
+      { name: "Paneer Makhmali Kebab", price: "₹349", image: paneerMakhmaliKebab, description: "Velvety smooth cottage cheese kebabs" },
+      { name: "Paneer Kali Mirchi Tikka", price: "₹369", image: paneerKaliMirchiTikka, description: "Black pepper marinated paneer grilled to perfection" },
     ],
   },
   {
     name: "Main Course",
     items: [
-      { name: "Lehsuni Palak", price: "₹399", image: lehsuniPalak },
-      { name: "Paneer Lababdar", price: "₹339", image: paneerLababdar },
-      { name: "Malai Kofta", price: "₹339", image: malaiKofta },
-      { name: "Sabz Noora Chas (Keema Veg)", price: "₹339", image: sabzNooraChas },
+      { name: "Lehsuni Palak", price: "₹399", image: lehsuniPalak, description: "Garlic-infused spinach curry with Indian spices" },
+      { name: "Paneer Lababdar", price: "₹339", image: paneerLababdar, description: "Cottage cheese in rich tomato and cashew gravy" },
+      { name: "Malai Kofta", price: "₹339", image: malaiKofta, description: "Fried veggie balls in creamy gravy" },
+      { name: "Sabz Noora Chas (Keema Veg)", price: "₹339", image: sabzNooraChas, description: "Mixed vegetables with minced soya in curry" },
     ],
   },
 ];
@@ -91,20 +91,26 @@ const Menu = () => {
                       className="group overflow-hidden border-primary/20 hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
                     >
                       <CardContent className="p-0">
-                        <div className="aspect-square overflow-hidden">
+                        <div className="relative aspect-square overflow-hidden">
                           <img
                             src={item.image}
                             alt={item.name}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
+                          <div className="absolute top-3 left-3 bg-primary text-primary-foreground px-3 py-1 rounded-full font-bold">
+                            {item.price}
+                          </div>
                         </div>
-                        <div className="p-4">
-                          <h4 className="text-foreground font-semibold mb-2 text-sm line-clamp-2 min-h-[2.5rem]">
+                        <div className="p-4 space-y-2">
+                          <h4 className="text-foreground font-bold text-lg">
                             {item.name}
                           </h4>
-                          <p className="text-accent font-bold text-lg">
-                            {item.price}
+                          <p className="text-muted-foreground text-sm">
+                            {item.description}
                           </p>
+                          <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
+                            {category.name}
+                          </span>
                         </div>
                       </CardContent>
                     </Card>
