@@ -17,13 +17,13 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>
           Elaichi Multi Cuisine
         </h1>
-        <p className="text-xl md:text-2xl mb-4 text-accent animate-fade-in">
+        <p className="text-xl md:text-2xl mb-4 text-accent animate-fade-in font-bold" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8), 0 0 15px rgba(0,0,0,0.6)' }}>
           Restaurant & Pure Veg
         </p>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in">
+        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.5)' }}>
           Experience the finest multi-cuisine dining in Raipur with authentic flavors
           and a sophisticated ambiance
         </p>
@@ -47,7 +47,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="text-sm text-primary-foreground/80 animate-fade-in">
+        <div className="text-sm text-primary-foreground/90 animate-fade-in" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
           <p>1st Floor, Avsar Arcade Opp. Chithuran Hanuman Mandir</p>
           <p>Mala Road, Choubey Colony, Raipur C.G, 492001</p>
         </div>
