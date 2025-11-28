@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Menu from "@/components/Menu";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
-import InstagramFeed from "@/components/InstagramFeed";
+// import InstagramFeed from "@/components/InstagramFeed";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -17,7 +17,7 @@ const Index = () => {
       <Menu />
       <Services />
       <Gallery />
-      <InstagramFeed />
+      {/* <InstagramFeed /> */}
       <Contact />
       <Footer />
     </div>
