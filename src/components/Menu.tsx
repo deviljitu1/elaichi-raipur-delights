@@ -55,7 +55,7 @@ const Menu = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="max-w-3xl mx-auto mb-12">
           {/* Menu Categories */}
           <div className="animate-fade-in">
             <Tabs defaultValue="indian" className="w-full">
@@ -93,21 +93,6 @@ const Menu = () => {
                 </TabsContent>
               ))}
             </Tabs>
-          </div>
-
-          {/* Full Menu Image */}
-          <div className="animate-fade-in">
-            <Card className="overflow-hidden shadow-elegant hover:shadow-glow transition-shadow">
-              <img
-                src={menuImage}
-                alt="Elaichi Complete Menu"
-                className="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => window.open(menuImage, '_blank')}
-              />
-            </Card>
-            <p className="text-center text-sm text-muted-foreground mt-4">
-              Click to view full menu
-            </p>
           </div>
         </div>
       </div>
