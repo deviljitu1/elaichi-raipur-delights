@@ -29,10 +29,10 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-scale-in">
-          <a href="tel:9179909595">
+          <a href="tel:91xxx-xxx-xxxx">
             <Button size="lg" className="bg-accent text-primary hover:bg-warm-gold shadow-glow">
               <Phone className="mr-2 h-5 w-5" />
-              Call: 9179909595
+              Call: xxx-xxx-xxxx
             </Button>
           </a>
           <a href="https://maps.app.goo.gl/GuMR7jLoirGzg2Mv8" target="_blank" rel="noopener noreferrer">
