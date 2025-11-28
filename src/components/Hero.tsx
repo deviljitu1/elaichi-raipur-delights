@@ -35,7 +35,7 @@ const Hero = () => {
               Call: 9179909595
             </Button>
           </a>
-          <a href="#contact">
+          <a href="https://share.google/QWf7nVWdlHfl0D2X7" target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               variant="outline"
